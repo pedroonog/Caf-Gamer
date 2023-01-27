@@ -1,0 +1,15 @@
+CREATE DATABASE cafegamer;
+USE cafegamer;
+
+CREATE TABLE servicos (
+	codServ 		INT(11)	AUTO_INCREMENT PRIMARY KEY,
+  	nomeServ 		VARCHAR(60) ,
+  	tipo			INT ,
+  	estoque 		BOOLEAN ,
+  	codForn 		INT ,
+  	preco 			FLOAT(7,2) ,
+  	promocao 		BOOLEAN ,
+  	aluguel 		BOOLEAN ,
+ 	obs				TEXT 
+	
+);

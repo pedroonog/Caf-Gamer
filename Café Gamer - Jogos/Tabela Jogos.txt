@@ -1,0 +1,14 @@
+CREATE DATABASE cafegamer;
+USE cafegamer;
+
+CREATE TABLE jogos (
+	codigo 		INT(11)	AUTO_INCREMENT PRIMARY KEY,
+  	nome 		VARCHAR(30) ,	 	
+  	plataforma 	VARCHAR(30) ,	
+  	ativo 	    TINYINT(1)  ,
+	datalancamento DATE     ,
+  	faixaetaria DATE        ,
+	foto        FILE        ,     
+	descricao   TEXT
+	
+);

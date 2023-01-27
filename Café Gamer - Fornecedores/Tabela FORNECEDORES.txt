@@ -1,0 +1,23 @@
+CREATE DATABASE cafegamer;
+USE cafegamer;
+
+CREATE TABLE fornecedores (
+	codigo 		INT(11)	AUTO_INCREMENT PRIMARY KEY,
+  	ativo 		TINYINT(1) ,	 	
+  	fotoProd 	FILE ,	
+  	codProd 	INT (11) ,
+  	nomeForn	VARCHAR(30) ,
+  	razaoSoc	VARCHAR(30) ,		
+  	endereço	VARCHAR(50) ,		
+  	bairro 		VARCHAR(20) ,		
+  	cidade 		VARCHAR(15) ,		
+  	uf 			CHAR(2) ,
+  	cnpj 		INT(20) ,
+  	telPrin 	INT(12) ,	
+  	telSec 		INT(12)	,	
+  	email 		VARCHAR(30) ,
+	ultEntr 	DATE ,
+	proxEntr 	DATE ,
+  	obs 		TEXT		
+
+);

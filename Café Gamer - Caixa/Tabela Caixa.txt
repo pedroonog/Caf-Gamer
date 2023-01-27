@@ -1,0 +1,15 @@
+CREATE DATABASE cafegamer;
+USE cafegamer;
+
+CREATE TABLE caixa (
+	notafiscal  INT(20)	AUTO_INCREMENT PRIMARY KEY,
+  	codcliente  INT(11)     ,	 	
+  	dataentrada DATE        ,	
+  	datasaida 	DATE        ,
+	codprod     INT (11)    ,
+  	valor       FLOAT (7,2) ,
+	tipopag     INT (1)     ,     
+	modopag     VARCHAR (9) ,
+	observacao  TEXT 
+	
+);

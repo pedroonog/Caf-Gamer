@@ -1,0 +1,82 @@
+<html> 
+	<head>
+		<title>Cadastro Caixa</title>
+	</head>
+	<body>
+		<h2>Cadastro Caixa</h2>
+		<form 	action="cadcaixa.php" 
+				enctype="multipart/form-data"
+				method="post">]
+				
+			Código:
+			
+			Nota Fiscal: 
+			<input 	type="number" 
+					name="notafiscal"
+					min="1"
+					max="99999999999"> 	
+		    <br>
+			
+			Codigo de Cliente: 
+			<input 	type="number" 
+					name="codcliente"
+					min="1"
+					max="99999999999"> 	
+		    <br>
+			
+			Data de Entrada: 
+			<input 	type="date" 
+					name="dataentrada"
+					min="2018-01-01"
+					max="2025-12-31">
+			<br>
+			
+			Data de Saida: 
+			<input 	type="date" 
+					name="datasaida"
+					min="2018-01-01"
+					max="2025-12-31">
+			<br>
+			
+			Codigo do Produto: 
+			<input 	type="number" 
+					name="codProd"
+					min="1"
+					max="99999999999"> 	
+		    <br>
+			
+			Valor:  
+			<input 	type="number" 
+					name="valor" 
+					min="0" 
+					max="999.999" 
+				placeholder="999,999"
+					step="0.001">	
+		    <br>
+			
+			Tipo de Pagamento:	
+			<input 	type="checkbox" 
+					name="tipopag" 
+					value="1">
+			<br>
+			
+			Modo de Pgamento: 
+			<input  type="text"
+					name="modopag"
+					maxlength="30" 
+					size="30" 
+			   placeholder="Modo de Pagamento">
+			<br>
+			
+						
+						Descrição:<br>
+			<textarea 	name="obs" 
+						rows="3" 
+						cols="80"
+					placeholder="Descrição"></textarea>
+			<br>
+			
+			<input type="submit" value="Cadastrar">
+		</form>
+	</body>
+</html>

@@ -1,0 +1,64 @@
+<html> 
+	<head>
+		<title>Cadastro de Jogos</title>
+	</head>
+	<body>
+		<h2>Cadastro de Jogos</h2>
+		<form 	action="cadjogos.php" 
+				enctype="multipart/form-data"
+				method="post">]
+				
+			Código:
+			
+			Nome do Jogo: 
+			<input  type="text"
+					name="nomeForn"
+					maxlength="30" 
+					size="30" 
+			   placeholder="Nome do Jogo">
+			<br>
+			
+			Plataforma: 
+			<input  type="text"
+					name="nomeForn"
+					maxlength="30" 
+					size="30" 
+			   placeholder="Plataforma">
+			<br>
+			
+			Ativo:	
+			<input 	type="checkbox" 
+					name="ativo" 
+					value="1">
+			<br>
+			
+			Data de Lançamento: 
+			<input 	type="date" 
+					name="ultEntr"
+					min="1900-01-01"
+					max="2025-12-31">
+			<br>
+			
+			Faixa Etária: 
+			<input 	type="number" 
+					name="codProd"
+					min="1"
+					max="99999999999"> 	
+		    <br>
+			
+			Foto: 
+			<input 	type="file" 
+					name="fotoProd">
+			<hr>
+			
+						Descrição:<br>
+			<textarea 	name="obs" 
+						rows="3" 
+						cols="80"
+					placeholder="Descrição"></textarea>
+			<br>
+			
+			<input type="submit" value="Cadastrar">
+		</form>
+	</body>
+</html>

@@ -1,0 +1,36 @@
+CREATE DATABASE cafegamer;
+USE cafegamer;
+
+CREATE TABLE clientes(
+		
+	codigo			 INT(20)	 AUTO_INCREMENT PRIMARY KEY,
+	ativo			 TINYINT(1),
+	nome			 VARCHAR(60),
+	ddd			 VARCHAR(2),
+	foneCelular		 VARCHAR(10),
+	foneResidencial	 	 VARCHAR(9),
+	email			 VARCHAR(100),
+	nascimento		 DATE,
+	cpf				 VARCHAR(14),
+	rg				 VARCHAR(15),
+	endereco		 VARCHAR(100),
+	bairro			 VARCHAR(100),
+	cidade			 VARCHAR(50),
+	uf				 CHAR(2),
+	cep				 VARCHAR(9),
+	ultCompra		 DATE,
+	bloqueio		 TINYINT(1),
+	motivoBloqueio	 TEXT
+	);
+
+INSERT INTO CLIENTES ( ativo, nome, DDD,foneCelular, foneResidencial, email, nascimento,
+	cpf, rg, endereco, bairro, cidade, uf, cep, ultCompra, bloqueio,
+	motivoBloqueio)
+VALUES ( 1, "Douglas", "11", "996354574", "24412536", "douglas@uol.com", "1995-05-05", "4455522478",
+	"452263354", "Rua do meio, 47", "Itaquera", "Sao Paulo", "SP", "04015040", "2017-04-12", 0,"");
+
+INSERT INTO CLIENTES ( ativo, nome, ddd, foneCelular, foneResidencial, email, nascimento,
+	cpf, rg, endereco, bairro, cidade, uf, cep, ultCompra, bloqueio,
+	motivoBloqueio)
+VALUES ( 1, "Pedro", "11", "996547788", "22456698", "pedro@uol.com", "1995-12-04", "63352214475",
+	"6322455875", "Rua do grande, 157", "Tatuapé", "Sao Paulo", "SP", "04452010", "2017-08-10", 0,"");
